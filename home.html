@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HiAnime — Watch Anime Free</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+  <a href="#" class="logo">HiAnime</a>
+
+  <div class="nav-center">
+    <a href="#" class="active">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Series</a>
+    <a href="#">Top Airing</a>
+    <a href="#">Most Popular</a>
+    <a href="#">Schedule</a>
+  </div>
+
+  <div class="nav-right">
+    <div class="search-box">
+      <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" placeholder="Search anime…"/>
+    </div>
+    <button class="btn-signin">Sign In</button>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-gradient"></div>
+  <div class="hero-gradient-bottom"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge"><span class="hero-badge-dot"></span> Currently Airing</div>
+
+    <h1>Jujutsu Kaisen<br>Season 2</h1>
+
+    <div class="hero-meta">
+      <div class="hero-rating">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="#fbbf24" stroke="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+        8.9
+      </div>
+      <div class="hero-meta-chip">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23,7 16,12 23,17"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        TV Series
+      </div>
+      <div class="hero-meta-chip">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+        24 min/ep
+      </div>
+      <div class="hero-meta-chip" style="color:#a78bfa">SUB | DUB</div>
+    </div>
+
+    <p class="hero-desc">
+      The story continues as Yuji Itadori teams up with the Special Grade Sorcerers to unravel the hidden past of Gojo Satoru during the Gojo's Past arc — a saga that changes everything.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-watch">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        Watch Now
+      </button>
+      <button class="btn-more">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        More Info
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Panel -->
+  <div class="hero-panel">
+    <p class="panel-title">Now Airing</p>
+
+    <div class="panel-card">
+      <img class="panel-thumb" src="https://cdn.myanimelist.net/images/anime/1659/154920l.webp" alt="JJK"/>
+      <div class="panel-info">
+        <div class="panel-name">Jujutsu Kaisen</div>
+        <div class="panel-sub">⭐ 8.9 · TV Series</div>
+      </div>
+      <span class="panel-ep">EP 37</span>
+    </div>
+
+    <div class="panel-card">
+      <img class="panel-thumb" src="https://cdn.anipixcdn.co/thumbnail/7f6ffaa6bb0b408017b62254211691b5.jpg" alt="AoT"/>
+      <div class="panel-info">
+        <div class="panel-name">Attack on Titan</div>
+        <div class="panel-sub">⭐ 9.5 · TV Series</div>
+      </div>
+      <span class="panel-ep">EP 89</span>
+    </div>
+
+    <div class="panel-card">
+      <img class="panel-thumb" src="https://cdn.anipixcdn.co/thumbnail/b0b1d24f68e3d6a9f855e424c4f0c9b6.jpg" alt="DS"/>
+      <div class="panel-info">
+        <div class="panel-name">Demon Slayer</div>
+        <div class="panel-sub">⭐ 9.0 · TV Series</div>
+      </div>
+      <span class="panel-ep">EP 56</span>
+    </div>
+
+    <div class="panel-card">
+      <img class="panel-thumb" src="https://cdn.anipixcdn.co/thumbnail/f899139df5e1059396431415e770c6dd.jpg" alt="Anime"/>
+      <div class="panel-info">
+        <div class="panel-name">One Piece</div>
+        <div class="panel-sub">⭐ 9.1 · TV Series</div>
+      </div>
+      <span class="panel-ep">EP 1087</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TRENDING NOW ══ -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span class="section-title-bar"></span>
+      Trending Now
+    </h2>
+    <a href="#" class="section-link">View all →</a>
+  </div>
+
+  <div class="anime-grid">
+    <!-- Card 1 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.myanimelist.net/images/anime/1659/154920l.webp" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 37</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Jujutsu Kaisen S2</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.9</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/7f6ffaa6bb0b408017b62254211691b5.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-dub">DUB</span>
+        <span class="card-ep-count">EP 89</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Attack on Titan Final</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>9.5</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/b0b1d24f68e3d6a9f855e424c4f0c9b6.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-badge badge-new" style="top:8px;left:auto;right:8px;">NEW</span>
+        <span class="card-ep-count">EP 56</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Demon Slayer: Hashira</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>9.0</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/f899139df5e1059396431415e770c6dd.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 1087</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">One Piece</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>9.1</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/81c650caac28cdefce4de5ddc18befa0.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-dub">DUB</span>
+        <span class="card-ep-count">EP 220</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Naruto Shippuden</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.7</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/bb633eed6f972501da3ea6d9eb9d5e77.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 12</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Chainsaw Man</div>
+        <div class="card-meta">
+          <span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.5</span>
+          <span class="card-type">TV</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FEATURED / SPOTLIGHT ══ -->
+<section class="section" style="padding-top:0">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span class="section-title-bar"></span>
+      Spotlight Picks
+    </h2>
+    <a href="#" class="section-link">View all →</a>
+  </div>
+  <div class="featured-row">
+    <div class="featured-card">
+      <img src="https://cdn.anipixcdn.co/thumbnail/b0b1d24f68e3d6a9f855e424c4f0c9b6.jpg" alt="anime"/>
+      <div class="featured-card-overlay"></div>
+      <div class="featured-card-content">
+        <span class="featured-tag">MOVIE</span>
+        <div class="featured-title">Demon Slayer: Mugen Train</div>
+        <div class="featured-sub">⭐ 8.6 · 117 min · SUB | DUB</div>
+      </div>
+    </div>
+    <div class="featured-card">
+      <img src="https://i.pinimg.com/736x/36/0f/5f/360f5f432c94d162c86cdc5ac3bc8b03.jpg" alt="anime"/>
+      <div class="featured-card-overlay"></div>
+      <div class="featured-card-content">
+        <span class="featured-tag">TOP RATED</span>
+        <div class="featured-title">Fullmetal Alchemist: Brotherhood</div>
+        <div class="featured-sub">⭐ 9.1 · 64 eps · SUB | DUB</div>
+      </div>
+    </div>
+    <div class="featured-card">
+      <img src="https://i.pinimg.com/236x/cc/49/13/cc4913e5d2a9259b78c122b27bc23004.jpg" alt="anime"/>
+      <div class="featured-card-overlay"></div>
+      <div class="featured-card-content">
+        <span class="featured-tag">NEW SEASON</span>
+        <div class="featured-title">My Hero Academia S7</div>
+        <div class="featured-sub">⭐ 8.4 · EP 21+ · SUB</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TOP AIRING ══ -->
+<section class="section" style="padding-top:0">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span class="section-title-bar"></span>
+      Top Airing
+    </h2>
+    <a href="#" class="section-link">View all →</a>
+  </div>
+  <div class="top-grid">
+    <div class="top-item">
+      <span class="top-rank gold">1</span>
+      <img class="top-thumb" src="https://cdn.myanimelist.net/images/anime/1659/154920l.webp" alt=""/>
+      <div class="top-info">
+        <div class="top-name">Jujutsu Kaisen</div>
+        <div class="top-meta">⭐ 8.9 · EP 37 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank silver">2</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/7f6ffaa6bb0b408017b62254211691b5.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">Attack on Titan</div>
+        <div class="top-meta">⭐ 9.5 · EP 89 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank bronze">3</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/b0b1d24f68e3d6a9f855e424c4f0c9b6.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">Demon Slayer</div>
+        <div class="top-meta">⭐ 9.0 · EP 56 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank">4</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/f899139df5e1059396431415e770c6dd.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">One Piece</div>
+        <div class="top-meta">⭐ 9.1 · EP 1087 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank">5</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/81c650caac28cdefce4de5ddc18befa0.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">Naruto Shippuden</div>
+        <div class="top-meta">⭐ 8.7 · EP 500 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank">6</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/a486cd07e4ac3d270571622f4f316ec5.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">FMA: Brotherhood</div>
+        <div class="top-meta">⭐ 9.1 · EP 64 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank">7</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/bb633eed6f972501da3ea6d9eb9d5e77.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">Chainsaw Man</div>
+        <div class="top-meta">⭐ 8.5 · EP 12 · TV</div>
+      </div>
+    </div>
+    <div class="top-item">
+      <span class="top-rank">8</span>
+      <img class="top-thumb" src="https://cdn.anipixcdn.co/thumbnail/5737c6ec2e0716f3d8a7a5c4e0de0d9a.jpg" alt=""/>
+      <div class="top-info">
+        <div class="top-name">My Hero Academia</div>
+        <div class="top-meta">⭐ 8.4 · EP 138 · TV</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SCHEDULE ══ -->
+<div class="schedule-strip">
+  <div class="section-header" style="margin-bottom:0">
+    <h2 class="section-title" style="font-size:15px">
+      <span class="section-title-bar"></span>
+      Estimated Schedule
+    </h2>
+  </div>
+  <div class="schedule-days" style="margin-top:16px">
+    <button class="day-btn">Sun</button>
+    <button class="day-btn">Mon</button>
+    <button class="day-btn">Tue</button>
+    <button class="day-btn active">Wed</button>
+    <button class="day-btn">Thu</button>
+    <button class="day-btn">Fri</button>
+    <button class="day-btn">Sat</button>
+  </div>
+  <div class="schedule-list">
+    <div class="schedule-item">
+      <img class="schedule-thumb" src="https://cdn.myanimelist.net/images/anime/1659/154920l.webp" alt=""/>
+      <div class="schedule-info">
+        <div class="schedule-title">Jujutsu Kaisen</div>
+        <div class="schedule-time">00:00 JST · EP 38</div>
+      </div>
+    </div>
+    <div class="schedule-item">
+      <img class="schedule-thumb" src="https://cdn.anipixcdn.co/thumbnail/b0b1d24f68e3d6a9f855e424c4f0c9b6.jpg" alt=""/>
+      <div class="schedule-info">
+        <div class="schedule-title">Demon Slayer</div>
+        <div class="schedule-time">01:30 JST · EP 57</div>
+      </div>
+    </div>
+    <div class="schedule-item">
+      <img class="schedule-thumb" src="https://i.pinimg.com/236x/cc/49/13/cc4913e5d2a9259b78c122b27bc23004.jpg" alt=""/>
+      <div class="schedule-info">
+        <div class="schedule-title">My Hero Academia</div>
+        <div class="schedule-time">05:30 JST · EP 22</div>
+      </div>
+    </div>
+    <div class="schedule-item">
+      <img class="schedule-thumb" src="https://cdn.anipixcdn.co/thumbnail/bb633eed6f972501da3ea6d9eb9d5e77.jpg" alt=""/>
+      <div class="schedule-info">
+        <div class="schedule-title">Chainsaw Man S2</div>
+        <div class="schedule-time">23:00 JST · EP 1</div>
+      </div>
+    </div>
+    <div class="schedule-item">
+      <img class="schedule-thumb" src="https://cdn.anipixcdn.co/thumbnail/f899139df5e1059396431415e770c6dd.jpg" alt=""/>
+      <div class="schedule-info">
+        <div class="schedule-title">One Piece</div>
+        <div class="schedule-time">09:30 JST · EP 1088</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ GENRES ══ -->
+<div>
+  <div class="section-header" style="padding:0 48px;margin-bottom:16px">
+    <h2 class="section-title" style="font-size:16px">
+      <span class="section-title-bar"></span>
+      Browse by Genre
+    </h2>
+  </div>
+  <div class="genre-wrap">
+    <span class="genre-pill">Action</span>
+    <span class="genre-pill">Adventure</span>
+    <span class="genre-pill">Comedy</span>
+    <span class="genre-pill">Drama</span>
+    <span class="genre-pill">Fantasy</span>
+    <span class="genre-pill">Horror</span>
+    <span class="genre-pill">Isekai</span>
+    <span class="genre-pill">Mecha</span>
+    <span class="genre-pill">Mystery</span>
+    <span class="genre-pill">Romance</span>
+    <span class="genre-pill">Sci-Fi</span>
+    <span class="genre-pill">Seinen</span>
+    <span class="genre-pill">Shonen</span>
+    <span class="genre-pill">Shoujo</span>
+    <span class="genre-pill">Slice of Life</span>
+    <span class="genre-pill">Sports</span>
+    <span class="genre-pill">Supernatural</span>
+    <span class="genre-pill">Thriller</span>
+  </div>
+</div>
+
+<!-- ══ RECENTLY ADDED ══ -->
+<section class="section" style="padding-top:0">
+  <div class="section-header">
+    <h2 class="section-title">
+      <span class="section-title-bar"></span>
+      Recently Added
+    </h2>
+    <a href="#" class="section-link">View all →</a>
+  </div>
+  <div class="anime-grid">
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/44119006254708ef096f25a96700dfb1.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-badge badge-new" style="top:8px;left:auto;right:8px;">NEW</span>
+        <span class="card-ep-count">EP 1</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Frieren: Beyond Journey</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>9.2</span><span class="card-type">TV</span></div>
+      </div>
+    </div>
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/d645920e395fedad7bbbed0eca3fe2e0.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-dub">DUB</span>
+        <span class="card-ep-count">EP 25</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Vinland Saga S2</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>9.0</span><span class="card-type">TV</span></div>
+      </div>
+    </div>
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/f1b4a1e8b4c12f7c7f2e390c76b4cc12.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 13</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Spy × Family Part 2</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.6</span><span class="card-type">TV</span></div>
+      </div>
+    </div>
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/7f2f505d40f3598bf177325a7fb53f4f.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 10</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Oshi no Ko</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.8</span><span class="card-type">TV</span></div>
+      </div>
+    </div>
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/4921f95baf824205e1b13f22d60357a1.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-dub">DUB</span>
+        <span class="card-ep-count">MOVIE</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Dragon Ball Super: Super Hero</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>7.8</span><span class="card-type">Movie</span></div>
+      </div>
+    </div>
+    <div class="anime-card">
+      <div class="card-thumb-wrap">
+        <img class="card-thumb" src="https://cdn.anipixcdn.co/thumbnail/cc0f7d2f185eccc8dbfa0d0a2671cdf5.jpg" alt="anime"/>
+        <div class="card-overlay"></div>
+        <div class="card-play-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+        <span class="card-badge badge-sub">SUB</span>
+        <span class="card-ep-count">EP 24</span>
+      </div>
+      <div class="card-info">
+        <div class="card-title">Tokyo Revengers S3</div>
+        <div class="card-meta"><span class="card-rating"><svg width="10" height="10" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>8.1</span><span class="card-type">TV</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo">HiAnime</span>
+      <p>Watch the latest anime online for free. Stream subbed and dubbed anime in ultra HD quality — no registration required.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV Series</a></li>
+        <li><a href="#">Top Airing</a></li>
+        <li><a href="#">Schedule</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Genres</h4>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Fantasy</a></li>
+        <li><a href="#">Isekai</a></li>
+        <li><a href="#">Shounen</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Report Issue</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 HiAnime · All Rights Reserved</p>
+    <p>This site does not store any files on its server.</p>
+  </div>
+</footer>
+
+<script>
+// Day button toggle
+document.querySelectorAll('.day-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// Smooth search focus
+document.querySelector('.search-box input').addEventListener('focus', function() {
+  this.parentElement.style.width = '260px';
+});
+document.querySelector('.search-box input').addEventListener('blur', function() {
+  this.parentElement.style.width = '';
+});
+
+// Navbar bg on scroll
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar');
+  nav.style.background = window.scrollY > 60
+    ? 'rgba(11,12,15,0.98)'
+    : 'rgba(11,12,15,0.92)';
+}, { passive: true });
+</script>
+</body>
+</html>

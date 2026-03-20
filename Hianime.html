@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiAnime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="navbar">
+    <h1 class="logo">HiAnime</h1>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
+        <a href="home.html" class="active">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Series</a>
+        <a href="#">Top Airing</a>
+    </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+    <div class="hero-left">
+        <p class="hero-badge">Free &amp; HD Quality</p>
+        <h2>Welcome to <span>HiAnime</span></h2>
+        <p class="tagline">Best anime streaming in one place</p>
+        <a href="home.html" class="watch-btn">▶ Watch Now</a>
+        <p class="description">
+            HiAnime is a free site to watch anime and download subbed or dubbed
+            anime in ultra HD quality — no registration or payment needed.
+        </p>
+    </div>
+
+    <div class="anime-panel">
+        <h2 class="panel-title">Now Airing</h2>
+
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/736x/0e/d9/07/0ed9079c3b52f5fbda2ed3d63a77aaf0.jpg" alt="Jujutsu Kaisen">
+            <div class="anime-info">
+                <h3>Jujutsu Kaisen</h3>
+                <p>⭐ 8.9 &nbsp;|&nbsp; EP 37+</p>
+            </div>
+            <span class="ep-badge">EP 37</span>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/236x/3f/b4/e8/3fb4e8f68f86662439303b6218bc1087.jpg" alt="Attack on Titan">
+            <div class="anime-info">
+                <h3>Attack on Titan</h3>
+                <p>⭐ 9.5 &nbsp;|&nbsp; EP 89+</p>
+            </div>
+            <span class="ep-badge">EP 89</span>
+        </div>
+
+        <div class="anime-card">
+            <img src="https://i.pinimg.com/236x/c5/8a/ee/c58aeed3a0fe25d54450feb8642dc243.jpg" alt="Demon Slayer">
+            <div class="anime-info">
+                <h3>Demon Slayer</h3>
+                <p>⭐ 9.0 &nbsp;|&nbsp; EP 56+</p>
+            </div>
+            <span class="ep-badge">EP 56</span>
+        </div>
+    </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+    <p>© 2026 HiAnime &nbsp;|&nbsp; All Rights Reserved</p>
+</footer>
+
+<script>
+    const btn   = document.getElementById('hamburger');
+    const links = document.getElementById('navLinks');
+
+    btn.addEventListener('click', () => {
+        links.classList.toggle('open');
+        btn.classList.toggle('active');
+    });
+
+    links.querySelectorAll('a').forEach(a =>
+        a.addEventListener('click', () => {
+            links.classList.remove('open');
+            btn.classList.remove('active');
+        })
+    );
+</script>
+</body>
+</html>

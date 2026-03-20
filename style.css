@@ -1,0 +1,457 @@
+/* ══════════════════════════════════════
+   RESET & BASE
+══════════════════════════════════════ */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black:    #000;
+    --dark:     #0d0d0d;
+    --dark2:    #141414;
+    --border:   rgba(255,255,255,0.08);
+    --yellow:   #facc15;
+    --yellow2:  #eab308;
+    --text:     #f1f1f1;
+    --muted:    #9ca3af;
+    --radius:   10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ══════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--yellow);
+    letter-spacing: -0.5px;
+    flex-shrink: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: var(--muted);
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+    white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--text);
+    background: rgba(255,255,255,0.07);
+}
+
+.nav-links a.active {
+    color: var(--yellow);
+}
+
+/* Hamburger — hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.hamburger:hover {
+    background: rgba(255,255,255,0.07);
+}
+
+.hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+    transform-origin: center;
+}
+
+/* Animate hamburger → X when open */
+.hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ══════════════════════════════════════
+   HERO
+══════════════════════════════════════ */
+.hero {
+    background: url("https://4kwallpapers.com/images/walls/thumbs_3t/25454.jpg")
+                center / cover no-repeat;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 60px 48px;
+    position: relative;
+}
+
+/* Dark overlay on the background image */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.85) 0%,
+        rgba(0,0,0,0.5)  50%,
+        rgba(0,0,0,0.2)  100%
+    );
+}
+
+.hero-left,
+.anime-panel {
+    position: relative;
+    z-index: 1;
+}
+
+/* ── Hero left ── */
+.hero-left {
+    flex: 1;
+    max-width: 480px;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(250,204,21,0.15);
+    border: 1px solid rgba(250,204,21,0.3);
+    color: var(--yellow);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 18px;
+    letter-spacing: 0.04em;
+}
+
+.hero-left h2 {
+    font-size: clamp(26px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.hero-left h2 span {
+    color: var(--yellow);
+}
+
+.tagline {
+    font-size: 16px;
+    color: var(--muted);
+    margin-bottom: 24px;
+}
+
+.watch-btn {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    margin-bottom: 24px;
+}
+
+.watch-btn:hover {
+    background: var(--yellow2);
+    transform: translateY(-1px);
+}
+
+.description {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+/* ── Anime panel (right side) ── */
+.anime-panel {
+    width: 290px;
+    flex-shrink: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.panel-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.anime-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 8px;
+}
+
+.anime-card:last-child {
+    margin-bottom: 0;
+}
+
+.anime-card:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.anime-card img {
+    width: 52px;
+    height: 68px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.anime-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.anime-info h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.anime-info p {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.ep-badge {
+    flex-shrink: 0;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 800;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+/* ══════════════════════════════════════
+   FOOTER
+══════════════════════════════════════ */
+footer {
+    background: var(--black);
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — Tablet  ≤ 900px
+══════════════════════════════════════ */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 0 24px;
+    }
+
+    .hero {
+        padding: 48px 32px;
+        gap: 24px;
+    }
+
+    .anime-panel {
+        width: 250px;
+    }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — Mobile  ≤ 640px
+══════════════════════════════════════ */
+@media (max-width: 640px) {
+
+    /* ── Navbar ── */
+    .navbar {
+        padding: 0 18px;
+        height: 56px;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Nav links: hidden drawer that slides down */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+
+        background: #0d0d0d;
+        border-bottom: 1px solid var(--border);
+
+        /* Hidden state */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+
+        z-index: 998;
+    }
+
+    /* Open state — driven by JS adding .open */
+    .nav-links.open {
+        max-height: 300px;
+    }
+
+    .nav-links a {
+        padding: 15px 20px;
+        font-size: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    /* ── Hero ── */
+    .hero {
+        /* Stack left content + panel vertically */
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        min-height: auto;
+        padding: 32px 18px 40px;
+        gap: 24px;
+
+        /* Keep a dark overlay, image still shows */
+    }
+
+    .hero::before {
+        background: rgba(0,0,0,0.75);
+    }
+
+    .hero-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .description {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .watch-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Panel fills full width */
+    .anime-panel {
+        width: 100%;
+    }
+
+    .anime-card img {
+        width: 46px;
+        height: 60px;
+    }
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE — Small phones  ≤ 380px
+══════════════════════════════════════ */
+@media (max-width: 380px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 24px 14px 32px;
+    }
+
+    .hero-left h2 {
+        font-size: 22px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .anime-panel {
+        padding: 14px;
+    }
+
+    .anime-card {
+        gap: 10px;
+        padding: 8px;
+    }
+} 
